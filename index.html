@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Loan Coach is a free tool that explains why a loan gets rejected and shows the quickest way to get approved, even with no credit score." />
+<title>Loan Coach | Get a plan, not just a no</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230F766E'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11.5' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="Loan Coach home">
+        <svg class="logo-mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" class="logo-bg"></rect>
+          <path d="M9 16.5l4.5 4.5L23 11.5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span class="brand-name">Loan Coach</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main">
+        <a href="#how">How it works</a>
+        <a href="#try">Try it</a>
+        <a href="#why">Why Loan Coach</a>
+        <a href="#trust">Honest limits</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#try" class="btn btn-primary btn-small">Try it</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== HERO (the motto) ===== -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="hero-kicker">Free tool · No credit score needed · Nothing stored</p>
+        <h1>Don't just get a no.<br />Get a plan.</h1>
+        <p class="hero-sub">Loan Coach tells you why a loan gets rejected and the quickest way to get approved, even if you have no credit score or payslips.</p>
+        <div class="hero-actions">
+          <a href="#try" class="btn btn-primary">Try Loan Coach</a>
+          <a href="#how" class="btn btn-ghost">How it works</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Example result for Ravi">
+        <p class="hero-card-label">Example: Ravi, delivery partner</p>
+        <div class="meter lvl-amber" id="hvMeter" aria-hidden="true"><span></span><span></span><span></span></div>
+        <p class="hero-verdict" id="hvVerdict">Almost there</p>
+        <dl class="hero-rows">
+          <div><dt>Safe loan today</dt><dd id="hvSafe">…</dd></div>
+          <div><dt>Why a lender may say no</dt><dd id="hvWhy">…</dd></div>
+          <div><dt>Fastest fix</dt><dd id="hvPlan">…</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ===== FACT STRIP ===== -->
+    <section class="facts" aria-label="Why this matters">
+      <div class="facts-inner">
+        <div class="fact"><span class="num">≈480 million</span><span class="label">Indian adults are credit unserved</span></div>
+        <div class="fact"><span class="num">≈30%</span><span class="label">have faced a loan or card rejection, and many were never told why</span></div>
+        <div class="fact"><span class="num">0</span><span class="label">credit score needed to use Loan Coach</span></div>
+      </div>
+      <p class="facts-source">Sources: TransUnion CIBIL study, 2022. Survey reported by Business Today, May 2026 (the article does not name who ran the survey).</p>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="section" id="how">
+      <div class="section-head">
+        <h2>How it works</h2>
+        <p>Three steps, about two minutes.</p>
+      </div>
+      <div class="steps">
+        <article class="step-card">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12V8H6a2 2 0 0 1 0-4h12v4"/><path d="M4 6v12a2 2 0 0 0 2 2h14v-4"/><path d="M18 12a2 2 0 0 0 0 4h4v-4z"/></svg></span>
+          <h3>1. Enter your earnings</h3>
+          <p>Add your last six months of earnings, the loans you already pay, and the loan you want.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+          <h3>2. See why</h3>
+          <p>Get the reasons a lender might say no, in plain words, with the fix next to each one.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg></span>
+          <h3>3. Follow your roadmap</h3>
+          <p>See whether to borrow less, pay off a loan, or wait, with real numbers and dates.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== THE TOOL ===== -->
+    <section class="section tool" id="try">
+      <div class="section-head">
+        <h2>Try it with real-feeling numbers</h2>
+        <p>Pick a sample person or enter your own. Move any slider and everything updates at once. All numbers on this page are made up for the demo.</p>
+      </div>
+
+      <div class="chips-row">
+        <div class="chips" id="personChips" role="group" aria-label="Choose a sample person">
+          <button type="button" class="chip" data-person="ravi" aria-pressed="true"><b>Ravi</b><span>Delivery partner</span></button>
+          <button type="button" class="chip" data-person="meena" aria-pressed="false"><b>Meena</b><span>Freelance designer</span></button>
+          <button type="button" class="chip" data-person="imran" aria-pressed="false"><b>Imran</b><span>Cab driver</span></button>
+          <button type="button" class="chip" data-person="custom" aria-pressed="false"><b>Enter my own</b><span>Start from a blank profile</span></button>
+        </div>
+        <button type="button" class="btn btn-story" id="storyBtn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><polygon points="7 4 20 12 7 20 7 4"/></svg>
+          Play Ravi's story
+        </button>
+      </div>
+
+      <div class="tool-grid">
+
+        <!-- ---------- INPUTS ---------- -->
+        <aside class="panel inputs" aria-label="Your details">
+          <h3 class="panel-title">Your details</h3>
+
+          <fieldset class="group">
+            <legend>Monthly earnings (₹)</legend>
+            <p class="hint">Use payout statements. Oldest month on the left.</p>
+            <div class="month-fields" id="monthFields"></div>
+
+            <div class="slider">
+              <div class="slider-row"><label for="weeks">Weeks you earned in the last 26</label><output id="weeksOut" for="weeks"></output></div>
+              <input type="range" id="weeks" min="0" max="26" step="1" value="24" />
+            </div>
+          </fieldset>
+
+          <fieldset class="group">
+            <legend>Loans you already pay</legend>
+            <p class="hint">Phone loan, bike loan, card dues, pay-later apps. Add each one.</p>
+            <div id="loansList" class="loans-list"></div>
+            <button type="button" class="btn btn-ghost btn-small" id="addLoan">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+              Add a loan
+            </button>
+          </fieldset>
+
+          <fieldset class="group">
+            <legend>The loan you want</legend>
+            <div class="slider">
+              <div class="slider-row"><label for="loanAmount">Loan amount</label><output id="loanAmountOut" for="loanAmount"></output></div>
+              <input type="range" id="loanAmount" min="10000" max="500000" step="5000" value="60000" />
+            </div>
+            <div class="slider">
+              <div class="slider-row"><label for="tenure">Repay over</label><output id="tenureOut" for="tenure"></output></div>
+              <input type="range" id="tenure" min="6" max="36" step="3" value="12" />
+            </div>
+            <label class="field" for="rate">Interest rate (% a year)
+              <input type="number" id="rate" min="0" max="60" step="0.5" value="18" inputmode="decimal" />
+            </label>
+            <p class="hint">The demo assumes 18% a year. Real lenders differ, so check the rate you are offered.</p>
+          </fieldset>
+
+          <button type="button" class="btn btn-ghost btn-block" id="resetBtn">Reset this person</button>
+        </aside>
+
+        <!-- ---------- RESULTS ---------- -->
+        <div class="results">
+          <div class="results-head">
+            <h3>Results for <span id="who">Ravi</span></h3>
+            <p id="whoRole" class="muted">Delivery partner</p>
+          </div>
+
+          <section class="card res" id="res-verdict" aria-labelledby="h-verdict">
+            <h4 id="h-verdict" class="card-title">Your result</h4>
+            <div id="verdictBody"></div>
+          </section>
+
+          <section class="card res" id="res-decoder" aria-labelledby="h-decoder">
+            <h4 id="h-decoder" class="card-title">Rejection Decoder</h4>
+            <p class="card-sub">The reasons a lender may give, ranked, with the fix beside each.</p>
+            <div id="decoderBody"></div>
+          </section>
+
+          <section class="card res" id="res-roadmap" aria-labelledby="h-roadmap">
+            <h4 id="h-roadmap" class="card-title">Approval Roadmap</h4>
+            <p class="card-sub">Three ways to reach the loan you want, with numbers.</p>
+            <div id="roadmapBody"></div>
+          </section>
+
+          <section class="card res" id="res-debt" aria-labelledby="h-debt">
+            <h4 id="h-debt" class="card-title">Your loans and Debt-Free Plan</h4>
+            <p class="card-sub">The order to clear your loans, and when you will be free of them.</p>
+            <div class="slider slider-inline">
+              <div class="slider-row"><label for="extra">Extra I can pay each month</label><output id="extraOut" for="extra"></output></div>
+              <input type="range" id="extra" min="0" max="10000" step="500" value="0" />
+            </div>
+            <div id="debtBody"></div>
+          </section>
+
+          <section class="card res" id="res-compare" aria-labelledby="h-compare">
+            <h4 id="h-compare" class="card-title">Before and after</h4>
+            <p class="card-sub">Today next to the result after following the plan.</p>
+            <div id="compareBody"></div>
+          </section>
+
+          <section class="card res" id="res-stress" aria-labelledby="h-stress">
+            <h4 id="h-stress" class="card-title">Bad-month stress test</h4>
+            <p class="card-sub">What if your earnings drop? Move the slider to find out.</p>
+            <div class="slider slider-inline">
+              <div class="slider-row"><label for="drop">Earnings drop by</label><output id="dropOut" for="drop"></output></div>
+              <input type="range" id="drop" min="0" max="50" step="5" value="30" />
+            </div>
+            <div id="stressBody"></div>
+          </section>
+
+          <section class="card res" id="res-cost" aria-labelledby="h-cost">
+            <h4 id="h-cost" class="card-title">What this loan really costs</h4>
+            <div id="costBody"></div>
+          </section>
+
+          <section class="card res" id="res-passport" aria-labelledby="h-passport">
+            <h4 id="h-passport" class="card-title">Income Passport</h4>
+            <p class="card-sub">A one-page summary of your earnings that a lender can read.</p>
+            <div id="passportBody"></div>
+          </section>
+
+          <section class="card res" id="res-checklist" aria-labelledby="h-checklist">
+            <h4 id="h-checklist" class="card-title">Documents to bring</h4>
+            <p class="card-sub">Tick each one as you collect it.</p>
+            <div class="progress" aria-hidden="true"><span id="checkBar"></span></div>
+            <p class="progress-label" id="checkLabel">0 of 6 ready</p>
+            <ul class="checklist" id="checklist"></ul>
+          </section>
+
+          <section class="card res" id="res-questions" aria-labelledby="h-questions">
+            <h4 id="h-questions" class="card-title">Questions to ask your lender</h4>
+            <p class="card-sub">Ask these before you sign anything.</p>
+            <ol class="questions">
+              <li>What is the interest rate, and is it fixed or does it change?</li>
+              <li>What is the processing fee, and are there any other charges?</li>
+              <li>Is there a penalty if I repay early or close the loan early?</li>
+              <li>What is the total amount I will repay over the whole loan?</li>
+              <li>Will you report this loan to the credit bureau, and how do missed payments count?</li>
+            </ol>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WHY LOAN COACH (dark band) ===== -->
+    <section class="why" id="why">
+      <div class="why-inner">
+        <div class="why-text">
+          <h2>A bank officer decides. Loan Coach prepares you.</h2>
+          <p>Loan Coach is a free tool, not a consultant and not a lender. It works before you apply, so a no costs you nothing, and it explains every result in plain words.</p>
+          <p>Other tools score you, sell you a loan, or need a credit score. Loan Coach starts from what you actually have: your earnings.</p>
+        </div>
+        <div class="vs">
+          <div class="vs-col">
+            <h3>A bank officer</h3>
+            <ul>
+              <li><b>Works for</b>The bank</li>
+              <li><b>When</b>After you apply</li>
+              <li><b>If the answer is no</b>Often little explanation</li>
+              <li><b>Proof wanted</b>Payslips, tax returns, credit score</li>
+            </ul>
+          </div>
+          <div class="vs-col vs-us">
+            <h3 class="brand-name">Loan Coach</h3>
+            <ul>
+              <li><b>Works for</b>You</li>
+              <li><b>When</b>Before you apply</li>
+              <li><b>If the answer is no</b>The reason and a plan</li>
+              <li><b>Proof wanted</b>Your earnings history, no score</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TRUST AND LIMITS ===== -->
+    <section class="section" id="trust">
+      <div class="section-head">
+        <h2>Honest about what this is</h2>
+        <p>Loan Coach is a hackathon prototype. It prepares you to apply. It does not approve loans.</p>
+      </div>
+
+      <div class="trust-grid">
+        <article class="card">
+          <h3 class="card-title">Our rules, in plain words</h3>
+          <ul class="rules">
+            <li>We use your <b>lowest</b> month, not your best one, because a loan has to survive a bad month.</li>
+            <li>Total EMIs should stay within <b>40%</b> of that lowest month. This is a common rule of thumb. Real lenders set their own limit.</li>
+            <li>The EMI uses the standard formula with the interest rate you set (18% by default).</li>
+            <li>Lenders like regular earning, so we look for at least <b>75%</b> of weeks earned (20 of 26).</li>
+            <li>The readiness score is out of 100: 40 points for steady weeks, 40 for how much room your EMIs leave, and 20 for how little your income swings.</li>
+            <li>Every result shows the rule behind it. Nothing is hidden.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card-title">Questions you may have</h3>
+          <details>
+            <summary>Is Loan Coach a bank or a consultant?</summary>
+            <p>Neither. It is a free tool. It does not lend money, take fees or give legal advice.</p>
+          </details>
+          <details>
+            <summary>Is my data stored?</summary>
+            <p>No. Everything you type stays in your browser while the page is open. There is no account and no database.</p>
+          </details>
+          <details>
+            <summary>Why not just ask a bank?</summary>
+            <p>A bank decides after you apply. Loan Coach helps you prepare before you apply, so a rejection does not catch you by surprise.</p>
+          </details>
+          <details>
+            <summary>What would a real version need?</summary>
+            <p>Consented bank and UPI data through India's Account Aggregator system, and income confirmed by the platforms people earn on. This prototype uses numbers you type.</p>
+          </details>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> <span class="brand-name">Loan Coach</span>. A hackathon prototype with sample data. Loan Coach prepares you to apply and does not approve loans.</p>
+  </footer>
+
+  <!-- ===== STORY MODE BAR ===== -->
+  <div class="story-bar" id="storyBar" role="dialog" aria-label="Ravi's story" hidden>
+    <div class="story-inner">
+      <p class="story-step" id="storyStep">Step 1 of 7</p>
+      <p class="story-text" id="storyText"></p>
+      <div class="story-actions">
+        <button type="button" class="btn btn-ghost btn-small" id="storyPrev">Back</button>
+        <button type="button" class="btn btn-primary btn-small" id="storyNext">Next</button>
+        <button type="button" class="btn btn-quiet btn-small" id="storyClose">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
